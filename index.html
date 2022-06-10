@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header_title">
+                Dalida
+            </h1>
+        </header>
+        <div class="main_part">
+            <div class="sidebar">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    Menu
+                </button>
+                
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="staticBackdropLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Mad Libs</a></li>
+                            <li><a href="#">Tom Thumb</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mad_libs">
+                <h3 class="mad_libs_title">
+                    Mad libs
+                </h3>
+                <div class="words mt-3 mb-3">
+                <form>
+                    <div class="row mb-3">
+                        <label for="person_name" class="col-sm-2 col-form-label">Person name:</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control input1" id="person_name">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="character" class="col-sm-2 col-form-label">Character:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control input2" id="character">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                    <label for="adverb" class="col-sm-2 col-form-label">Adverb:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control input3" id="adverb">
+                    </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="adjective" class="col-sm-2 col-form-label">Adjective:</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control input4" id="adjective">
+                        </div>
+                    </div>
+                    </form>
+                    <button class="btn btn-primary" id="tell_story_btn">Tell story</button>
+                </div>
+                <div class="story">
+                    <h3 class="story_title">
+                        Wendy's Crazy MadLibs Story
+                    </h3>
+                    <p class="story_text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
